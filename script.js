@@ -29,7 +29,7 @@ document
 
     localStorage.setItem("user", JSON.stringify(user));
 
-    window.location.href = "/profile-page/profile.html";
+    window.location.href = "profile-page/profile.html";
   });
 
 function generateAccessToken() {

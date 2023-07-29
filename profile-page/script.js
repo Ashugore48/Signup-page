@@ -10,6 +10,6 @@ if (!user || !user.accessToken) {
 
   document.getElementById("logoutBtn").addEventListener("click", function () {
     localStorage.clear();
-    window.location.href = "/signup-page/index.html";
+    window.location.href = "/index.html";
   });
 }
