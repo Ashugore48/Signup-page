@@ -1,7 +1,7 @@
 
 const user = JSON.parse(localStorage.getItem("user"));
 if (!user || !user.accessToken) {
-  window.location.href = "/signup-page/index.html";
+  window.location.href = "/index.html";
 } else {
   document.getElementById("fullName").innerText = user.name;
   document.getElementById("email").innerText = user.email;
