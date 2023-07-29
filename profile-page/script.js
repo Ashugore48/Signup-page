@@ -1,7 +1,7 @@
 
 const user = JSON.parse(localStorage.getItem("user"));
 if (!user || !user.accessToken) {
-  window.location.href = "Signup-page/";
+  window.location.href = "/Signup-page/";
 } else {
   document.getElementById("fullName").innerText = user.name;
   document.getElementById("email").innerText = user.email;
@@ -10,6 +10,6 @@ if (!user || !user.accessToken) {
 
   document.getElementById("logoutBtn").addEventListener("click", function () {
     localStorage.clear();
-    window.location.href = "Signup-page/";
+    window.location.href = "/Signup-page/";
   });
 }
